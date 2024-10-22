@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=-1, b=7
+        //Ví dụ 1: Kiểm tra a > b hay không
+        if (a>b){
+            console.log(a+" > "+b)
+        } else {
+            console.log(a+" không lớn hơn "+b)
+        }
+
+        //Ví dụ 2: Kiểm tra a là số dương hay không
+        if (a>0){
+            console.log(a+" là số dương")
+        } else {
+            console.log(a+" không là số dương")
+        }
+
+        // Khác biệt giữa == và ===:
+        // Kiểm tra a == b hay không (bằng về giá trị), Kiểm tra a === b hay không (bằng về giá trị và kiểu dữ liệu)
+        let c = '8', d = 8
+        if (c == d) {
+            console.log("c == d")
+        } if (c === d) {
+            console.log("c === d")
+        }
+
+        // ==: phép so sánh bằng nhau, !=: phép so sánh không bằng
+        // >=: phép so sánh lớn hơn hoặc bằng, <=: phép so sánh bé hơn hoặc bằng
+        // &&: phép và (AND), || : phép hoặc (OR)
+
+        //Bài tập 1: Kiểm tra a có chia hết cho b hay không
+        if (a%b == 0) {
+            console.log("a chia hết cho b")
+        } else {
+            console.log("a không chia hết cho b")
+        }
+        //Bài tập 2: Kiểm tra a là số lẻ hay số chẵn
+        if (a%2 != 0) {
+            console.log("a là số lẻ")
+        } else {
+            console.log("a là số chẵn")
+        }
+
+        //Cấu trúc if else mở rộng: 1 câu lệnh if chỉ có thể có 1 mệnh đề if, 1 mệnh đề else nhưng có thể gồm nhiều mệnh đề else if
+        if (a>0){
+            console.log("a dương")
+        } else if (a<0){
+            console.log("a âm")
+        } else {
+            console.log("a là số 0")
+        }
+
+        //Ví dụ: Kiểm tra a có 1 chữ số hay 2 chữ số hay 3 chữ số hay >= 4 chữ số
+        if (a<0) {
+            console.log("Không thể xác định số "+a+" có mấy chữ số")
+        } else if (a<10 && a>=0) {
+            console.log(a+" là số có 1 chữ số")
+        } else if (a>= 10 && a < 100 ) {
+            console.log(a+" là số có 2 chữ số")
+        } else if (a>= 100 && a < 1000 ) {
+            console.log(a+" là số có 3 chữ số")
+        } else if (a>= 1000) {
+            console.log(a+" là số có 4 chữ số ")
+        }
+
+        //Bài tập 3: Giả sử a là 1 tháng trong năm, cho biết tháng đó có bao nhiêu ngày
+        if (a < 0 || a > 12) {
+            console.log(a+" không phải là tháng trong năm")
+        } else if (a==1 || a == 3 || a ==5 || a == 7 || a == 8 || a == 10 || a == 12){
+            console.log("Tháng "+a+" có 31 ngày")
+        } else if (a==2){
+            console.log("Tháng "+a+" có 28 hoặc 29 ngày")
+        } else {
+            console.log("Tháng "+a+" có 30 ngày")
+        }      
+        // var thang31 = [1, 3, 5, 7, 8, 10, 12]
+        // var thang30 = [4,6,9,11]
+    </script>
+</body>
+</html>
