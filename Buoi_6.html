@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        //Hàm không có tham số
+        //01. Hàm không có tham số
         function in_XinChao(){
             console.log("Xin chào Green Academy - Trả góp 0%")
             console.log("Giảm giá 10% trong tháng 10")
@@ -21,19 +21,71 @@
         }
 
         in_BCC2();
+        console.log("___")
         in_XinChao();
-        
-        //Hàm có 1 tham số
+        console.log("___")
+
+        //02. Hàm có 1 tham số
         function thongTinHinhVuong(canh){
             console.log("Hình vuông có chiều dài cạnh bằng "+canh)
         }
         thongTinHinhVuong(3)
 
-        //Hàm có 2 tham số
+        //03. Hàm có 2 tham số
         function thongTinHinhCN(dai,rong){
             console.log("Hình chữ nhật có chiều dài bằng "+dai+" và chiều rộng bằng "+rong)
         }
         thongTinHinhCN(5,3)
+
+        //04. Hàm có 2 tham số, kiểu dữ liệu khác nhau, cách nối dữ liệu khác nhau
+        function mieuTaThay(tinhCach1,tinhCach2){
+            console.log(`Thầy của mình ${tinhCach1} nhưng hơi ${tinhCach2}`)
+        }
+        mieuTaThay("vui tính","thấp")
+        mieuTaThay("dễ thương","hay quảng cáo khóa học")
+        console.log("___")
+
+        //05. Công thức toán học
+        console.log(Math.max(102834,46,1111111))
+        console.log(Math.round(3.14))
+        console.log(Math.pow(2,2))
+        console.log("___")
+
+        //06. Hàm tính toán tự định nghĩa: return
+        function tong(a,b){
+            return a+b
+        }
+        function tich(a,b,c){
+            return a*b*c
+        }
+        function thuong(a,b){
+            return a/b
+        }
+        console.log(tong(2,4))
+        console.log(tich(2,3,4))
+        console.log(thuong(6,3))
+        console.log("___")
+
+        //07. Hiện alert
+        //alert(Math.pow(2,2))\
+        
+        console.log("Bài tập 1:")
+        // Bài tập 1: Tính diện tích hình chữ nhật
+        function tinhDienTichHCN(x,y){
+            return x*y
+        }
+        console.log("Diện tích hình chữ nhật là "+tinhDienTichHCN(3,5))
+        console.log(`Diện tích hình chữ nhật là ${tinhDienTichHCN(3,2)}`)
+        console.log("Bài tập 2:")
+        // Bài tập 2: Tính diện tích hình tròn
+        function tinhDienTichTron(r){
+            return r*r*3.14
+        }
+        console.log("Diện tích hình tròn là "+tinhDienTichTron(5))
+
+        // Các kiểu dữ liệu:
+
+        
     </script>
 </body>
 </html>
